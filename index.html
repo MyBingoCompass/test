@@ -2,17 +2,33 @@
 
 <html lang="en">
     <head>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
 
+<script>
 
+var myCenter=new google.maps.LatLng(36.7848136,-75.9863074);
 
+function initialize() {
+  var mapProp = {
+    center:new  google.maps.LatLng(36.7848136,-75.9863074),
+    zoom:14,
+    mapTypeId:google.maps.MapTypeId.HYBRID
+  };
+  var map=new google.maps.Map(document.getElementById("bingoCompassMap"),mapProp);
 
+var marker=new google.maps.Marker({
+  position:myCenter,
+  });
 
+marker.setMap(map);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
 </head>
 
 <body>
-
-    
-<div>This is my test app</div>
+<div id="bingoCompassMap" style="width:450px;height:
+    350px;"></div>
 </body>
 
 </html>
