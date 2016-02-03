@@ -9,7 +9,7 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Google Maps Example</name>
+    <name>User Sign in / Registration Example</name>
 
     <description>
         An example of User Sign in and registration phonegap build. 
